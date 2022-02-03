@@ -1,0 +1,41 @@
+<header>
+  <div class="container">
+    <div class="inner-nav">
+      <ul class="navbar-links">
+        <li>
+          <a class="navbar-brand my-2" routerLink="/home">
+            <i class="fa fa-home"></i> {{ 'home.breadcrumbs' | translate }}
+          </a>
+        </li>
+        <li>
+          <div ngbDropdown class="navbar-dd">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" ngbDropdownToggle aria-haspopup="true" aria-expanded="false">
+              {{ 'home.top-level-communities.head' | translate }}
+            </button>
+            <div ngbDropdownMenu aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" routerLink="/handle/1/60">Tràth-ìrean</a>
+              <a class="dropdown-item" routerLink="/handle/1/63">Bun-sgoil</a>
+              <a class="dropdown-item" routerLink="/handle/1/59">Àrd-sgoil</a>
+              <a class="dropdown-item" routerLink="/handle/1/61">Pàrantan</a>
+              <a class="dropdown-item" routerLink="/handle/1/62">Measgachadh</a>
+            </div>
+          </div>
+        </li>
+      </ul>
+
+      <nav role="navigation" [attr.aria-label]="'nav.user.description' | translate" class="navbar navbar-light navbar-expand-md flex-shrink-0 px-0">
+        <ds-search-navbar></ds-search-navbar>
+        <ds-lang-switch></ds-lang-switch>
+        <ds-auth-nav-menu></ds-auth-nav-menu>
+        <ds-impersonate-navbar></ds-impersonate-navbar>
+        <div class="pl-2">
+          <button class="navbar-toggler" type="button" (click)="toggleNavbar()"
+                  aria-controls="collapsingNav"
+                  aria-expanded="false" [attr.aria-label]="'nav.toggle' | translate">
+            <span class="navbar-toggler-icon fas fa-bars fa-fw" aria-hidden="true"></span>
+          </button>
+        </div>
+      </nav>
+    </div>
+  </div>
+</header>

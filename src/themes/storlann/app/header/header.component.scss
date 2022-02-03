@@ -1,0 +1,114 @@
+header {
+  background-color: #008FED;
+  color: #ffffff;
+
+  .form-control {
+    border-color: white;
+    color: white;
+
+  }
+
+  .inner-nav {
+    display: flex;
+    justify-content: space-between;
+
+    @media screen and (max-width: map-get($grid-breakpoints, md)) {
+      justify-content: flex-end;
+    }
+
+    .container {
+
+    }
+  }
+
+
+  a {
+    color: white;
+  }
+
+  .navbar, .navbar-light {
+      .navbar-toggler {
+          color: white;
+
+      }
+
+  }
+
+  @media screen and (max-width: 475px) {
+    ds-auth-nav-menu {
+      display: none;
+    }
+  }
+}
+
+.navbar-links {
+  @media screen and (max-width: map-get($grid-breakpoints, md)) {
+      display: none;
+  }
+
+
+  list-style: none;
+  padding:0;
+  margin:0;
+  display: flex;
+  align-items: stretch;
+
+  li:first-child {
+    background-color: #0059B2;
+    padding-left: 10px;
+  }
+
+  li:last-child {
+    > div {
+      height: 100%;
+
+      button {
+        border: 0;
+        height: 100%;
+        display: block;
+        outline: none;
+        -webkit-appearance: none;
+        color: white;
+        background-color: transparent;
+        padding: 4px 10px;
+      }
+      button.btn-secondary:focus {
+        -webkit-box-shadow: none;
+        box-shadow: none;
+        background-color: #080808;
+      }
+
+      div {
+        a {
+          color: #212529;
+        }
+      }
+    }
+  }
+}
+
+.navbar-brand{
+   font-size: 1rem;
+   img {
+    max-height: var(--ds-header-logo-height);
+    max-width: 100%;
+    @media screen and (max-width: map-get($grid-breakpoints, sm)) {
+      max-height: var(--ds-header-logo-height-xs);
+    }
+  }
+}
+.navbar-toggler .navbar-toggler-icon {
+  background-image: none !important;
+  line-height: 1.5;
+}
+
+.navbar ::ng-deep {
+  a {
+    color: var(--ds-header-icon-color);
+
+    &:hover, &focus {
+      color: var(--ds-header-icon-color-hover);
+    }
+  }
+}
+

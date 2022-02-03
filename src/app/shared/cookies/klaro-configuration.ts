@@ -51,7 +51,63 @@ export const klaroConfiguration: any = {
   https://github.com/KIProtect/klaro/tree/master/src/translations
   */
   translations: {
-    en: {
+    gd: {
+      acceptAll: 'Gabh ris na h-uile',
+      acceptSelected: 'Gabh ris an taghadh',
+      app: {
+        optOut: {
+          description: 'Tha an app seo air a luchdachadh gu gnàthach (ach chan fheum thu aontachadh ris)',
+          title: '(gun aontachadh ris)'
+        },
+        purpose: 'adhbhar',
+        purposes: 'adhbharan',
+        required: {
+          description: 'Tha am prògram seo riatanach an-còmhnaidh',
+          title: '(riatanach an-còmhnaidh)'
+        }
+      },
+      close: 'Dùin',
+	    ok: 'Gabh ris',
+      decline: 'Diùlt',
+      changeDescription: 'Tha atharraichean ann bho thadhail thu mu dheireadh; ùraich do chead.',
+      consentNotice: {
+        description: 'Bidh sinn a’ cruinneachadh agus a’ cleachdadh fiosrachadh pearsanta airson nan adhbharan seo: <strong>Dearbhadh, Roghainnean, Buidheachas agus Staitistigs</strong>. <br/> Airson tuilleadh fiosrachaidh, leugh am poileasaidh prìobhaideachd.',
+
+        learnMore: 'Customaich'
+      },
+      consentModal: {
+        description: 'An seo is urrainn dhut am fiosrachadh a chruinnicheas sinn ort fhaicinn agus a chustomachadh.',
+        privacyPolicy: {
+          name: 'poileasaidh prìobhaideachd',
+          text: 'Gus tuilleadh fhaighinn a-mach, leugh am poileasaidh prìobhaideachd.'
+        },
+        title: 'Fiosrachadh a chruinnicheas sinn'
+      },
+      purposes: {},
+      purposeItem: {
+        services: 'seirbheisean',
+        service: 'seirbheis'
+      },
+      privacyPolicy: {
+          name: 'poileasaidh prìobhaideachd',
+          text: 'Gus tuilleadh fhaighinn a-mach, leugh am poileasaidh prìobhaideachd.'
+        
+      },
+      service: {
+        optOut: {
+          title: '(gun aontachadh ris',
+          description: 'Tha an seirbheis seo air a luchdachadh gu gnàthach (ach chan fheum thu aontachadh ris)'
+        },
+        required: {
+          title: '(riatanach an-còmhnaidh)',
+          description: 'Tha an seirbheis seo riatanach an-còmhnaidh'
+        },
+        purposes: 'adhbharan',
+        purpose: 'adhbhar'
+      },
+      poweredBy: 'klaro'
+    },
+     en: {
       acceptAll: 'cookies.consent.accept-all',
       acceptSelected: 'cookies.consent.accept-selected',
       app: {

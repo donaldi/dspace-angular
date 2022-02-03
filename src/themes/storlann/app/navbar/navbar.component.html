@@ -1,0 +1,26 @@
+<nav [ngClass]="{'open': !(menuCollapsed | async)}" [@slideMobileNav]="!(windowService.isXsOrSm() | async) ? 'default' : ((menuCollapsed | async) ? 'collapsed' : 'expanded')"
+    class="navbar navbar-expand-md p-md-0 navbar-container" role="navigation" [attr.aria-label]="'nav.main.description' | translate">
+    <!-- TODO remove navbar-container class when https://github.com/twbs/bootstrap/issues/24726 is fixed -->
+    <div class="container">
+        <div class="reset-padding-md w-100">
+            <div id="collapsingNav">
+                <ul class="navbar-nav mr-auto shadow-none">
+                    <!--ng-container *ngFor="let section of (sections | async)">
+                        <ng-container *ngComponentOutlet="(sectionMap$ | async).get(section.id)?.component; injector: (sectionMap$ | async).get(section.id).injector;"></ng-container>
+                    </ng-container-->
+                    <li>
+                        <a class="navbar-brand my-2" routerLink="/home">
+                            <i class="fa fa-home"></i> {{ 'home.breadcrumbs' | translate }}
+                        </a>
+                    </li>
+                    <li><a class="dropdown-item" routerLink="/handle/1/60">Tràth-ìrean</a></li>
+                    <li><a class="dropdown-item" routerLink="/handle/1/63">Bun-sgoil</a></li>
+                    <li><a class="dropdown-item" routerLink="/handle/1/59">Àrd-sgoil</a></li>
+                    <li><a class="dropdown-item" routerLink="/handle/1/61">Pàrantan</a></li>
+                    <li><a class="dropdown-item" routerLink="/handle/1/62">Measgachadh</a></li>
+                    <li><a class="dropdown-item" routerLink="/login">{{ 'nav.login' | translate }}</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav>

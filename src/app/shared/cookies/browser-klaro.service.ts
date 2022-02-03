@@ -179,7 +179,6 @@ export class BrowserKlaroService extends KlaroService {
      * Make sure the fallback language is english
      */
     this.translateService.setDefaultLang(environment.defaultLanguage);
-
     this.translate(this.klaroConfig.translations.en);
   }
 
