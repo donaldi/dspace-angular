@@ -9,7 +9,9 @@ input[type="text"] {
     opacity: 0;
   }
 }
-
+input[type="text"]:focus ~ a.submit-icon {
+  color: #242424;
+}
 
 
 a.submit-icon {
@@ -25,7 +27,7 @@ a.submit-icon {
   }
 
   a.submit-icon {
-    color: var(--bs-link-color);
+    color: var(--ds-header-icon-color);
   }
 }
 
