@@ -6,7 +6,31 @@ languages:
     label: Gàidhlig
     active: true
 themes:
-  - name: storlann 
+  - name: storlann
+    # Whenever this theme is active, the following tags will be injected into the <head> of the page.
+    headTags:
+      # Insert <link rel="icon" href="assets/storlann/images/favicons/favicon.ico" sizes="any"/> into the <head> of the page.
+      - tagName: link
+        attributes:
+          rel: icon
+          href: assets/storlann/images/favicons/favicon.ico
+          sizes: any
+      # Insert <link rel="icon" href="assets/storlann/images/favicons/favicon.svg" type="image/svg+xml"/> into the <head> of the page.
+      - tagName: link
+        attributes:
+          rel: icon
+          href: assets/storlann/images/favicons/favicon.svg
+          type: image/svg+xml
+      # Insert <link rel="apple-touch-icon" href="assets/storlann/images/favicons/apple-touch-icon.png"/> into the <head> of the page.
+      - tagName: link
+        attributes:
+          rel: apple-touch-icon
+          href: assets/storlann/images/favicons/apple-touch-icon.png
+      # Insert <link rel="manifest" href="assets/storlann/images/favicons/manifest.webmanifest"/> into the <head> of the page.
+      - tagName: link
+        attributes:
+          rel: manifest
+          href: assets/storlann/images/favicons/manifest.webmanifest
 rest:
   ssl: true
   host: api7.dspace.org

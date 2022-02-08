@@ -9,7 +9,19 @@
 }
 
 .jumbotron {
-  background-color: var(--ds-home-news-background-color);
+    background-image: url('/assets/storlann/images/dspace-header-bg.gif');
+    background-position-x: center;
+    background-position-y: bottom;
+    background-color: rgb(54, 195, 255);
+    padding-top: 48px;
+    padding-bottom: 48px;
+    margin-bottom: 30px;
+
+  .strapline {
+    font-size: 2.0em;
+    color: #FFF;
+    margin-left: 15px;
+  }
 }
 
 a {
