@@ -14,13 +14,48 @@
 <div class="container">
   <div class="row ss-intro-wrap">
     <div class="col-md-4 welcome">
-      <h2>Fàilte</h2>
+      <div class="ss-intro ss-shadow">
+        <h2>Fàilte</h2>
 
-      <p>Tha an timcheallan a’ sealltainn nithean a chaidh a chur ris an stòr bho chionn ghoirid. Thoir sùil timcheall feuch dè lorgas tu!</p>
-      <p>Air neo, lorg goireas le sùil a thoirt tro gach roinn (<a href="/handle/1/60">trath-ìrean</a>, <a href="/handle/1/63">bun-sgoil</a>, <a href="/handle/1/59">àrd-sgoil</a>, <a href="/handle/1/61">pàrantan</a> agus <a href="/handle/1/62">measgachadh</a>).</p>
+        <p>Tha an timcheallan a’ sealltainn nithean a chaidh a chur ris an stòr bho chionn ghoirid. Thoir sùil timcheall feuch dè lorgas tu!</p>
+        <p>Air neo, lorg goireas le sùil a thoirt tro gach roinn (<a href="/handle/1/60">trath-ìrean</a>, <a href="/handle/1/63">bun-sgoil</a>, <a href="/handle/1/59">àrd-sgoil</a>, <a href="/handle/1/61">pàrantan</a> agus <a href="/handle/1/62">measgachadh</a>).</p>
+      </div>
     </div>
     <div class="col-md-8">
-      <p>carousel</p>
+      
+    <ngb-carousel class="ss-carousel ss-shadow">
+        <ng-template ngbSlide *ngFor="let item of items; index as i">
+
+          <div class="ss-slide">
+            <a class="thumbnail" href="{{ item._links.self.href }}">
+              <img src="{{ item._links.thumbnail.href}}" alt="item thumbnail"/>
+            </a>
+            <h3>{{ item.name }}</h3>
+          </div>
+        </ng-template>
+    </ngb-carousel>
     </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row ss-featured" *ngFor="let patch of staticPatches">
+    <div class="col-md-4">
+      <div class="card {{patch.accent}}">
+        <div class="card-image">
+          <a href="{{patch.url}}">
+            <img class="img-responsive" src="/assets/storlann/images/{{patch.image}}" alt="a dictionary, open" width="300" height="195"/>
+            <span class="card-title">{{patch.title}}</span>
+          </a>
+          <div class="card-content">
+            <p>{{patch.text}} </p>
+          </div>
+          <div class="card-action">
+            <a href="{{patch.url}}" target="new_blank">{{ patch.action}}</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
   </div>
 </div>
