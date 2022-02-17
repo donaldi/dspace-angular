@@ -54,17 +54,19 @@ a {
 
 .ss-carousel {
   background-color: #ec0072;
-  min-height: 270px;
+  min-height: 300px;
   color: white;
 
   a {
     color: white;
+    align-self: center;
   }
 
   .ss-slide {
-    padding: 15px;
+    padding: 15px 90px;
     display: flex;
     flex-direction: column;
+    text-align: center;
 
     img {
       height: 100%;
@@ -75,3 +77,115 @@ a {
 }
 
 
+.card {
+  margin-top: 30px;
+  box-sizing: border-box;
+  border-radius: 2px;
+  background-clip: padding-box;
+
+  .card-image {
+    position:relative;
+    overflow: hidden;
+
+    .card-title {
+      margin:0;
+      position: absolute;
+      bottom:0;
+      left:0;
+      padding:16px;
+      color: #fff;
+      font-size: 24px;
+      font-weight: 300;
+      text-transform: uppercase;
+    }
+    img {
+      display: block;
+      max-width: 100%;
+      width:100%;
+      height: auto;
+    }
+  }
+
+  .card-content {
+    padding: 16px;
+    border-radius: 0 0 2px 2px;
+    background-clip: padding-box;
+    box-sizing: border-box;
+  }
+
+  .card-action {
+    border-top: 1px solid rgba(160,160,160,0.2);
+    padding: 16px;
+    text-transform: uppercase;
+    a {
+      color:#ffab40;
+      font-size: 14px;
+    }
+  }
+}
+
+.ey {
+  border-bottom: 6px solid #87c734;
+  .card-title {
+    background-color: #87c734;
+  }
+}
+
+.bs {
+  border-bottom: 6px solid #00BFD8;
+  .card-title {
+    background-color: #00BFD8;
+  }
+}
+
+.as{
+  border-bottom: 6px solid #91389D;
+  .card-title {
+    background-color: #91389D;
+  }
+}
+
+
+
+
+.communities-wrap
+{
+  margin-bottom: 20px;
+
+  h2 {
+    color: #B22C00;
+  }
+
+  .ss-communities {
+    margin-top: 30px;
+    padding: 20px;
+    background: #FFB600 url('/assets/storlann/images/communities-bg.png') center right no-repeat;
+  }
+
+  .communities-sub {
+    clear:both;
+
+    img {
+      float: left;
+      margin: 0 7px 10px 0;
+      width:70px;
+      height: auto;
+      display: block;
+    }
+  }
+
+  .list-group {
+    li {
+      background-color:#fff0ce;
+      color:#ee0071;
+    }
+    .badge {
+      background-color: #ee0071;
+      color:#fff0ce;
+    }
+    a {
+      color: #ee0071;
+    }
+  }
+
+}

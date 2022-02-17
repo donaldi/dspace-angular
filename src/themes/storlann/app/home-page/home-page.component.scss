@@ -4,3 +4,30 @@
 ds-home-news {
 	margin-bottom: 20px;
 }
+
+.upload {
+	background-color: #0095ff;
+	padding-top: 20px;
+
+	.upload-tok {
+		background: url('/assets/storlann/images/tree-of-knowledge-seo-sibh.png') center top no-repeat;
+		min-height: 450px;
+	}
+
+	.jotform-txt {
+		color: #ffffff !important;
+		padding-bottom: 20px;
+
+		h2 {
+			color: white;
+		}
+
+	}
+}
+
+.links {
+	background-color: #0059B2;
+	.row {
+		padding: 20px;
+	}
+}

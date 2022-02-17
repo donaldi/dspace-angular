@@ -39,23 +39,103 @@
 </div>
 
 <div class="container">
-  <div class="row ss-featured" *ngFor="let patch of staticPatches">
-    <div class="col-md-4">
-      <div class="card {{patch.accent}}">
+  <div class="row ss-featured">
+    <div class="col-md-4" *ngFor="let patch of staticPatches">
+      <div class="card ss-shadow {{patch.accent}}">
         <div class="card-image">
           <a href="{{patch.url}}">
-            <img class="img-responsive" src="/assets/storlann/images/{{patch.image}}" alt="a dictionary, open" width="300" height="195"/>
+            <img src="/assets/storlann/images/{{patch.image}}" alt="{{patch.alt}}" width="300" height="195"/>
             <span class="card-title">{{patch.title}}</span>
           </a>
-          <div class="card-content">
-            <p>{{patch.text}} </p>
-          </div>
-          <div class="card-action">
-            <a href="{{patch.url}}" target="new_blank">{{ patch.action}}</a>
-          </div>
+        </div>
+        <div class="card-content">
+          <p>{{patch.text}} </p>
+        </div>
+        <div class="card-action">
+          <a href="{{patch.url}}" target="new_blank">{{ patch.action}}</a>
         </div>
       </div>
     </div>
 
+  </div>
+</div>
+
+
+<div class="container">
+  <div class="row communities-wrap">
+    <div class="col-md-12">
+      <div class="ss-communities ss-shadow">
+        <div class="row">
+
+          <div class="col-md-4">
+            <h2>Coimhearsnachdan</h2>
+
+            <div class="communities-sub">
+              <a href="/handle/1/60">
+                <img src="/assets/storlann/images/trath-irean-icon.png" width="175" height="175" alt="Trath-irean" class="ss-shadow"/>
+              </a>
+              <h3><a href="/handle/1/60">Tràth-ìrean</a></h3>
+              Early years resources
+            </div>
+
+            <div class="communities-sub">
+              <a href="/handle/1/63">
+                <img src="/assets/storlann/images/bun-sgoil-icon.png" width="175" height="175" alt="Bun-sgoil" class="ss-shadow"/>
+              </a>
+              <h3><a href="/handle/1/63">Bun-sgoil</a></h3>
+              Primary school resources
+            </div>
+
+            <div class="communities-sub">
+              <a href="/handle/1/59">
+                <img src="/assets/storlann/images/ard-sgoil-icon.png" width="175" height="175" alt="Àrd-sgoil" class="ss-shadow"/>
+              </a>
+              <h3><a href="/handle/1/60">Àrd-sgoil</a></h3>
+              High school resources
+            </div>
+
+            <div class="communities-sub">
+              <a href="/handle/1/59">
+                <img src="/assets/storlann/images/parantan-icon.png" width="175" height="175" alt="Pàrantan" class="ss-shadow"/>
+              </a>
+              <h3><a href="/handle/1/60">Pàrantan</a></h3>
+              Parents’ resources
+            </div>
+
+            <div class="communities-sub">
+              <a href="/handle/1/62">
+                <img src="/assets/storlann/images/measgachadh-icon.png" width="175" height="175" alt="Measgachadh" class="ss-shadow"/>
+              </a>
+              <h3><a href="/handle/1/62">Measgachadh</a></h3>
+              General resources
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <h2>Ùghdar</h2>
+
+            <ul class="list-group">
+              <li class="list-group-item" *ngFor="let author of authors">
+                <span class="badge">{{author.count}}</span>
+                <a href="{{author._links.search.href}}">{{author.label}}</a>
+              </li>
+            </ul>
+
+          </div>
+
+          <div class="col-md-4">
+            <h2>Cuspair</h2>
+
+            <ul class="list-group">
+              <li class="list-group-item" *ngFor="let subject of subjects">
+                <span class="badge">{{subject.count}}</span>
+                <a href="{{subject._links.search.href}}">{{subject.label}}</a>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </div>
   </div>
 </div>
