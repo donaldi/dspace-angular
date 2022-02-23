@@ -2230,7 +2230,7 @@
 
   "menu.section.browse_community_by_title": "A rèir Tiotal",
 
-  "menu.section.browse_global": "DSpace gu lèir",
+  "menu.section.browse_global": "Seosibh gu lèir",
 
   "menu.section.browse_global_by_author": "A rèir Ùghdar",
 
@@ -2818,7 +2818,7 @@
 
   "repository.image.logo": "Suaicheantas ionad-tasgaidh",
 
-  "repository.title.prefix": "DSpace Angular :: ",
+  "repository.title.prefix": "Seosibh :: ",
 
   "repository.title.prefixDSpace": "DSpace Angular ::",
 
@@ -3821,4 +3821,8 @@
   "idle-modal.log-out": "Log a-mach",
 
   "idle-modal.extend-session": "Leudaich seisean",
+
+  "info.feedback.breadcrumbs": "Cuir faidhle",
+
+  "info.feedback.title": "Cuir faidhle",
 }

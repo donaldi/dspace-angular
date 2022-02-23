@@ -1,0 +1,46 @@
+ul.form-section {
+  list-style: none;
+  margin: 0 0 46px 0;
+  padding: 0;
+  color: #00AEE6;
+
+  label {
+    cursor: pointer;
+  }
+
+  .form-required {
+    color: red;
+  }
+
+  .form-header-group {
+    border-bottom: 3px solid #00aee6;
+    padding: 24px 0 24px 0;
+    margin: 12px 36px 12px 0;
+  }
+
+  .form-sub-label-container {
+    margin-right: 34px;
+  }
+
+  .form-sub-label {
+    display: block;
+    font-size: 12px;
+  }
+
+  .form-input-wide {
+    > div {
+      display: flex;
+    }
+  }
+
+  .form-radio {
+    margin-left:34px;
+    .form-radio-item {
+      display: block;
+    }
+  }
+
+  #id_6 {
+    padding-top: 16px;
+  }
+}

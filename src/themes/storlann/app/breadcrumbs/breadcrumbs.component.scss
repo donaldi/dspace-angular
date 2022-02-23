@@ -1,0 +1,51 @@
+.nav-breadcrumb {
+  background-color: #36c3ff;
+}
+
+.bc-logo {
+  display: block;
+  height: 100%;
+  width: auto;
+}
+
+.breadcrumb {
+  border-radius: 0;
+  margin-top: calc(-1 * var(--ds-content-spacing));
+  padding-bottom: var(--ds-content-spacing / 3);
+  padding-top: var(--ds-content-spacing / 3);
+  background: #36C3FF url(/assets/storlann/images/dspace-header-bg.gif) center bottom;
+
+  li:first-child {
+    min-width:87px;
+  }
+
+  a {
+    color: white;
+  }
+}
+
+li.breadcrumb-item {
+  display: flex;
+}
+
+.breadcrumb-item-limiter {
+  display: inline-block;
+  max-width: var(--ds-breadcrumb-max-length);
+  > * {
+    max-width: 100%;
+    display: block;
+  }
+}
+
+li.breadcrumb-item > a {
+  color: white;
+}
+li.breadcrumb-item.active {
+  color: white;
+}
+
+.breadcrumb-item+ .breadcrumb-item::before {
+  display: block;
+  content: quote("•") !important;
+  color: white;
+}

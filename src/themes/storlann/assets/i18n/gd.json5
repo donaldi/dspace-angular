@@ -1,4 +1,9 @@
 {
 	"home.top-level-communities.head": "Coimhearsnachdan",
 	"cookies.consent.content-notice.description": "Bidh sinn a' cruinneachadh agus a' cleachdadh fiosrachadh pearsanta airson nan adhbharan seo: <strong>Dearbhadh, Roghainnean, Buidheachas agus Staitistigs</strong>. <br/> Airson tuilleadh fiosrachaidh, leugh am {privacyPolicy}.",
+
+  	"menu.section.browse_global": "Seosibh gu lèir",
+	"repository.title.prefix": "Seosibh :: ",
+	"info.feedback.breadcrumbs": "Cuir faidhle",
+	"info.feedback.title": "Cuir faidhle",
 }

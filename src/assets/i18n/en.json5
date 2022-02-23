@@ -1500,7 +1500,7 @@
 
   "info.privacy.title": "Privacy Statement",
 
-  "info.feedback.breadcrumbs": "Feedback",
+  "info.feedback.breadcrumbs": "Send a file",
 
   "info.feedback.head": "Feedback",
 
@@ -2282,7 +2282,7 @@
 
   "menu.section.browse_community_by_title": "By Title",
 
-  "menu.section.browse_global": "Browse DSpace",
+  "menu.section.browse_global": "Browse Seosibh",
 
   "menu.section.browse_global_by_author": "By Author",
 
@@ -2870,7 +2870,7 @@
 
   "repository.image.logo": "Repository logo",
 
-  "repository.title.prefix": "DSpace :: ",
+  "repository.title.prefix": "Seosibh :: ",
 
   "repository.title.prefixDSpace": "DSpace Angular ::",
 
@@ -3915,4 +3915,6 @@
   "idle-modal.log-out": "Log out",
 
   "idle-modal.extend-session": "Extend session",
+
+  "info.feedback": "Send a file",
 }

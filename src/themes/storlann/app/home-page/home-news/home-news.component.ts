@@ -59,8 +59,7 @@ export class HomeNewsComponent extends BaseComponent {
 
       for (let i=0; i<this.noOfPatches; i++) {
         const randomInt = this.getRandomInt(i*this.noOfPatches, this.noOfPatches * i + this.noOfPatches );
-        console.log("random int is "+randomInt);
-        console.log("patch will be ",PATCHES[randomInt])
+        
         this.staticPatches.push(PATCHES[ randomInt ]);
       }
   }
@@ -81,6 +80,7 @@ export class HomeNewsComponent extends BaseComponent {
         RestRequestMethod.GET,
         discoveryApiEndpoint,
       ).subscribe(results => {
+        
         this.items = results.payload._embedded.items;
         this.changeDetector.markForCheck();
       });
@@ -89,17 +89,17 @@ export class HomeNewsComponent extends BaseComponent {
         RestRequestMethod.GET,
         authorEndpoint)
       .subscribe(results => {
-        console.log("author",results)
+        
         this.authors = results.payload._embedded.values;
         this.changeDetector.markForCheck();
-        //TODO
+        
       });
 
       this.restService.request(
         RestRequestMethod.GET,
         subjectEndpoint)
       .subscribe(results => {
-        console.log("subject",results)
+        
         this.subjects = results.payload._embedded.values;
         this.changeDetector.markForCheck();
       });

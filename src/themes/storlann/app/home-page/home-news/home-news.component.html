@@ -27,7 +27,7 @@
         <ng-template ngbSlide *ngFor="let item of items; index as i">
 
           <div class="ss-slide">
-            <a class="thumbnail" href="{{ item._links.self.href }}">
+            <a class="thumbnail" href="/handle/{{ item.handle }}">
               <img src="{{ item._links.thumbnail.href}}" alt="item thumbnail"/>
             </a>
             <h3>{{ item.name }}</h3>
@@ -117,7 +117,7 @@
             <ul class="list-group">
               <li class="list-group-item" *ngFor="let author of authors">
                 <span class="badge">{{author.count}}</span>
-                <a href="{{author._links.search.href}}">{{author.label}}</a>
+                <a href="/browse/author?value={{author.label}}">{{author.label}}</a>
               </li>
             </ul>
 
@@ -129,7 +129,7 @@
             <ul class="list-group">
               <li class="list-group-item" *ngFor="let subject of subjects">
                 <span class="badge">{{subject.count}}</span>
-                <a href="{{subject._links.search.href}}">{{subject.label}}</a>
+                <a href="/browse/subject?value={{subject.label}}">{{subject.label}}</a>
               </li>
             </ul>
           </div>
