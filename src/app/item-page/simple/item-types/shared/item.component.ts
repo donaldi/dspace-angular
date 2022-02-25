@@ -43,6 +43,8 @@ export class ItemComponent implements OnInit {
   }
 
   ngOnInit(): void {
+    
+
     this.itemPageRoute = getItemPageRoute(this.object);
     // check to see if iiif viewer is required.
     this.iiifEnabled = isIiifEnabled(this.object);

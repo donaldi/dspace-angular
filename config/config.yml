@@ -33,6 +33,7 @@ themes:
           href: assets/storlann/images/favicons/manifest.webmanifest
 rest:
   ssl: true
-  host: api7.dspace.org
+#  host: api7.dspace.org
+  host: seosibh.storlann.co.uk
   port: 443
   nameSpace: /server

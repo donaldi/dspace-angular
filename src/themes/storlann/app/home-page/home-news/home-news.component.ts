@@ -82,6 +82,16 @@ export class HomeNewsComponent extends BaseComponent {
       ).subscribe(results => {
         
         this.items = results.payload._embedded.items;
+
+        for(let i=0; i<this.items.length; i++) {
+          const thumb = this.items[i]._links.thumbnail.href;
+          this.restService.request(
+            RestRequestMethod.GET,
+            thumb).subscribe (r2 => {
+              this.items[i].thumbnailUrl = r2.payload._links.content.href;
+            });
+        }
+
         this.changeDetector.markForCheck();
       });
 
