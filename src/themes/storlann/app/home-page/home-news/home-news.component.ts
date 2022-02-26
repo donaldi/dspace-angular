@@ -70,7 +70,7 @@ export class HomeNewsComponent extends BaseComponent {
 
   ngOnInit() {
       // The path to the REST discovery endpoint for recent items (the carousel)
-      const discoveryApiEndpoint = environment.rest.baseUrl + '/api/discover/browses/dateissued/items?size=10&sort=dateissued,asc';
+      const discoveryApiEndpoint = environment.rest.baseUrl + '/api/discover/browses/dateissued/items?size=10&sort=dateissued,desc';
 
       // author & subject facet endpoint
       const authorEndpoint = environment.rest.baseUrl + '/api/discover/facets/author?size=10';
