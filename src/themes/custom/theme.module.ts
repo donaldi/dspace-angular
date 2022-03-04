@@ -129,7 +129,7 @@ const DECLARATIONS = [
   HeaderNavbarWrapperComponent,
   BreadcrumbsComponent,
   FeedbackComponent,
-  SearchNavbarComponent
+  SearchNavbarComponent,
   CommunityListComponent
 ];
 
