@@ -85,6 +85,7 @@ import { ResourcePoliciesModule } from '../../app/shared/resource-policies/resou
 import { ComcolModule } from '../../app/shared/comcol/comcol.module';
 import { FeedbackComponent } from './app/info/feedback/feedback.component';
 import { SearchNavbarComponent } from './app/search-navbar/search-navbar.component';
+import { CommunityListComponent } from './app/community-list-page/community-list/community-list.component';
 
 const DECLARATIONS = [
   FileSectionComponent,
@@ -129,6 +130,7 @@ const DECLARATIONS = [
   BreadcrumbsComponent,
   FeedbackComponent,
   SearchNavbarComponent
+  CommunityListComponent
 ];
 
 @NgModule({
