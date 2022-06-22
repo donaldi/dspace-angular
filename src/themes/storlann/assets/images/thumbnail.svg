@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="151.79999mm"
+   height="203.8mm"
+   viewBox="0 0 151.79999 203.8"
+   version="1.1"
+   id="svg5"
+   xml:space="preserve"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"><defs
+     id="defs2"><filter
+       height="1.1645714"
+       width="1.2341464"
+       y="-0.082285717"
+       x="-0.11707317"
+       style="color-interpolation-filters:sRGB"
+       id="filter159"><feGaussianBlur
+         stdDeviation="4"
+         result="result1"
+         id="feGaussianBlur137" /><feComposite
+         in="result1"
+         in2="result1"
+         result="result4"
+         operator="in"
+         id="feComposite139" /><feGaussianBlur
+         stdDeviation="2"
+         result="result6"
+         in="result4"
+         id="feGaussianBlur141" /><feComposite
+         operator="xor"
+         in="result6"
+         in2="result4"
+         result="result8"
+         id="feComposite143" /><feComposite
+         operator="atop"
+         result="fbSourceGraphic"
+         in="result4"
+         in2="result8"
+         id="feComposite145" /><feSpecularLighting
+         specularExponent="10"
+         specularConstant="1.29999995"
+         surfaceScale="3"
+         lighting-color="#ffffff"
+         result="result1"
+         in="fbSourceGraphic"
+         id="feSpecularLighting149"><feDistantLight
+           azimuth="235"
+           elevation="55"
+           id="feDistantLight147" /></feSpecularLighting><feComposite
+         operator="atop"
+         result="result2"
+         in="result1"
+         in2="fbSourceGraphic"
+         id="feComposite151" /><feComposite
+         k3="1"
+         k2="1"
+         operator="arithmetic"
+         result="result4"
+         in="fbSourceGraphic"
+         in2="result2"
+         id="feComposite153"
+         k1="0"
+         k4="0" /><feComposite
+         operator="over"
+         in="result4"
+         in2="SourceGraphic"
+         id="feComposite155" /><feBlend
+         mode="multiply"
+         in2="result2"
+         id="feBlend157" /></filter></defs><g
+     id="layer1"
+     transform="translate(-25.568341,-46.478266)"><rect
+       style="fill:#f5f5f5;stroke-width:1.7;stroke-linecap:round;filter:url(#filter159);stop-color:#000000"
+       id="rect61"
+       width="123"
+       height="175"
+       x="39.968342"
+       y="60.878269" /><text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;white-space:pre;inline-size:45.5193;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="60.996876"
+       y="121.92259"
+       id="text272"
+       transform="matrix(2.1327315,0,0,2.1327315,-71.071238,-141.10964)"><tspan
+         x="60.996876"
+         y="121.92259"
+         id="tspan805">Goireas</tspan></text><g
+       id="g698"
+       transform="matrix(0.06724775,0,0,0.06724775,73.455498,200.55656)"><rect
+         class="st0"
+         width="900"
+         height="252"
+         id="rect656"
+         x="0"
+         y="0" /><polygon
+         class="st1"
+         points="289,14 429,127 289,238 887,238 887,14 "
+         id="polygon658" /><g
+         id="g666">
+	<path
+   class="st2"
+   d="m 50.1,162.8 c 7.4,4.5 18.1,8.3 29.4,8.3 16.8,0 26.6,-8.9 26.6,-21.7 0,-11.9 -6.8,-18.7 -23.9,-25.3 C 61.5,116.7 48.6,106 48.6,88.1 48.6,68.3 65,53.6 89.7,53.6 c 13,0 22.4,3 28.1,6.2 l -4.5,13.4 c -4.1,-2.3 -12.6,-6 -24.1,-6 -17.3,0 -23.9,10.4 -23.9,19 0,11.9 7.7,17.7 25.3,24.5 21.5,8.3 32.4,18.7 32.4,37.3 0,19.6 -14.5,36.6 -44.5,36.6 -12.3,0 -25.6,-3.6 -32.4,-8.1 z"
+   id="path660" />
+	<path
+   class="st2"
+   d="m 155.1,140.2 c 0.4,22.4 14.7,31.7 31.3,31.7 11.9,0 19,-2.1 25.3,-4.7 l 2.8,11.9 c -5.8,2.6 -15.8,5.7 -30.3,5.7 -28.1,0 -44.9,-18.5 -44.9,-46 0,-27.5 16.2,-49.2 42.8,-49.2 29.8,0 37.7,26.2 37.7,43 0,3.4 -0.4,6 -0.6,7.7 h -64.1 z m 48.6,-11.9 c 0.2,-10.6 -4.3,-27 -23,-27 -16.8,0 -24.1,15.5 -25.4,27 z"
+   id="path662" />
+	<path
+   class="st2"
+   d="m 322.8,136.4 c 0,33.7 -23.4,48.4 -45.4,48.4 -24.7,0 -43.7,-18.1 -43.7,-46.9 0,-30.5 20,-48.4 45.2,-48.4 26.2,0 43.9,19 43.9,46.9 z m -72.4,1 c 0,20 11.5,35.1 27.7,35.1 15.8,0 27.7,-14.9 27.7,-35.4 0,-15.5 -7.7,-35.1 -27.3,-35.1 -19.6,-0.1 -28.1,18 -28.1,35.4 z"
+   id="path664" />
+</g><g
+         id="g678">
+	<path
+   class="st0"
+   d="m 476.1,162.8 c 7.4,4.5 18.1,8.3 29.4,8.3 16.8,0 26.6,-8.9 26.6,-21.7 0,-11.9 -6.8,-18.7 -23.9,-25.3 -20.7,-7.4 -33.6,-18.1 -33.6,-36 0,-19.8 16.4,-34.5 41.1,-34.5 13,0 22.4,3 28.1,6.2 l -4.5,13.4 c -4.1,-2.3 -12.6,-6 -24.1,-6 -17.3,0 -23.9,10.4 -23.9,19 0,11.9 7.7,17.7 25.3,24.5 21.5,8.3 32.4,18.7 32.4,37.3 0,19.6 -14.5,36.6 -44.5,36.6 -12.3,0 -25.6,-3.6 -32.4,-8.1 z"
+   id="path668" />
+	<path
+   class="st0"
+   d="m 589.2,65.9 c 0.2,5.7 -4,10.2 -10.6,10.2 -5.8,0 -10,-4.5 -10,-10.2 0,-5.8 4.3,-10.4 10.4,-10.4 6.3,0 10.2,4.6 10.2,10.4 z M 570.7,182.8 V 91.6 h 16.6 v 91.2 z"
+   id="path670" />
+	<path
+   class="st0"
+   d="m 614.1,182.8 c 0.4,-6.2 0.8,-15.5 0.8,-23.6 V 49 h 16.4 v 57.3 h 0.4 c 5.8,-10.2 16.4,-16.8 31.1,-16.8 22.6,0 38.6,18.9 38.5,46.6 0,32.6 -20.5,48.8 -40.9,48.8 -13.2,0 -23.8,-5.1 -30.5,-17.2 h -0.6 l -0.8,15.1 z m 17.2,-36.6 c 0,2.1 0.4,4.1 0.8,6 3.2,11.5 12.8,19.4 24.9,19.4 17.3,0 27.7,-14.1 27.7,-35.1 0,-18.3 -9.4,-33.9 -27.1,-33.9 -11.3,0 -21.9,7.7 -25.3,20.4 -0.4,1.9 -0.9,4.1 -0.9,6.8 v 16.4 z"
+   id="path672" />
+	<path
+   class="st0"
+   d="m 722.1,49 h 16.6 v 56.9 h 0.4 c 2.6,-4.7 6.8,-8.9 11.9,-11.7 4.9,-2.8 10.7,-4.7 17,-4.7 12.3,0 31.9,7.5 31.9,39 v 54.3 h -16.6 v -52.4 c 0,-14.7 -5.5,-27.1 -21.1,-27.1 -10.7,0 -19.2,7.5 -22.2,16.6 -0.9,2.3 -1.1,4.7 -1.1,7.9 v 55 H 722.3 V 49 Z"
+   id="path674" />
+	<path
+   class="st0"
+   d="m 823.5,173.2 c 0,-6.8 4.7,-11.7 11.1,-11.7 6.8,0 11.1,4.9 11.1,11.7 0,6.6 -4.3,11.7 -11.1,11.7 -6.5,0 -11.1,-5.1 -11.1,-11.7 z m 4.7,-27 -2.6,-90.5 h 18.1 l -2.6,90.5 z"
+   id="path676" />
+</g></g></g><style
+     type="text/css"
+     id="style654">
+	.st0{fill:#0091EA;}
+	.st1{fill:#FFFFFF;}
+	.st2{fill:#E0F2FC;}
+</style></svg>

@@ -85,6 +85,7 @@ export class HomeNewsComponent extends BaseComponent {
 
         for(let i=0; i<this.items.length; i++) {
           const thumb = this.items[i]._links.thumbnail.href;
+          this.items[i].thumbnailUrl = '/assets/storlann/images/thumbnail.svg'; //placeholder
           this.restService.request(
             RestRequestMethod.GET,
             thumb).subscribe (r2 => {

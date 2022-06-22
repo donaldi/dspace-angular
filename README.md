@@ -53,6 +53,22 @@ yarn start
 
 Then go to [http://localhost:4000](http://localhost:4000) in your browser
 
+If you get an error wittering on about crypto hash then you may need to monkey-patch the lib it complains about.
+```javascript
+// pseudo code, but you get the idea, use m5 instead of md4
+const crypto = require("crypto");
+const originalCreateHash = crypto.createHash;
+
+crypto.createHash = (..args) => {
+  if (args[0] == 'md4') {
+    return originalCreateHash.createHash('md5');
+  }
+ 
+  return createHash(..args);
+};
+```
+
+
 Not sure where to start? watch the training videos linked in the [Introduction to the technology](#introduction-to-the-technology) section below.
 
 Table of Contents
